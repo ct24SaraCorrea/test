@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intereses Vocacionales - Test de Prioridades</title>
+<link rel="stylesheet" href="intereses.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <div class="brand">Intereses Vocacionales</div>
+    <div class="prog">
+      <div class="bar"><div id="fill" class="fill"></div></div>
+      <span id="ptext" class="ptext">0%</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h1>Test de prioridades por intereses</h1>
+    <p class="muted">Asigna puntajes únicos 10..1 (10 = más te gusta) a cada actividad de cada sección.</p>
+
+    <div class="controls">
+      <button id="save" class="btn accent">Guardar</button>
+      <button id="load" class="btn ghost">Cargar</button>
+      <button id="clear" class="btn">Limpiar</button>
+      <button id="download" class="btn primary">Descargar resultados</button>
+    </div>
+
+    <!-- Sección I -->
+    <div class="step" data-step="1">
+      <h2>I. En un día libre, ¿cómo ordenarías las siguientes actividades?</h2>
+      <div class="grid">
+        <div class="item"><span>1) Visitar a un amigo/pariente enfermo</span><select data-col="1"></select></div>
+        <div class="item"><span>2) Ver a tus amigos y organizar una fiesta</span><select data-col="2"></select></div>
+        <div class="item"><span>3) Escribir mensajes/chatear por Internet</span><select data-col="3"></select></div>
+        <div class="item"><span>4) Realizar una actividad artística (danza, pintura…)</span><select data-col="4"></select></div>
+        <div class="item"><span>5) Tocar un instrumento ante un grupo</span><select data-col="5"></select></div>
+        <div class="item"><span>6) Poner en orden tu colección favorita</span><select data-col="6"></select></div>
+        <div class="item"><span>7) Asistir a una conferencia científica/museo</span><select data-col="7"></select></div>
+        <div class="item"><span>8) Resolver problemas matemáticos</span><select data-col="8"></select></div>
+        <div class="item"><span>9) Reparar algún aparato descompuesto</span><select data-col="9"></select></div>
+        <div class="item"><span>10) Ir de paseo al campo o a la playa</span><select data-col="10"></select></div>
+      </div>
+    </div>
+
+    <!-- Sección II -->
+    <div class="step" data-step="2">
+      <h2>II. Si te ofrecieran las siguientes opciones de trabajo (mismo sueldo)…</h2>
+      <div class="grid">
+        <div class="item"><span>1) Cuidar niños pequeños</span><select data-col="1"></select></div>
+        <div class="item"><span>2) Organizar un grupo de jóvenes</span><select data-col="2"></select></div>
+        <div class="item"><span>3) Contestar cartas de un programa de radio</span><select data-col="3"></select></div>
+        <div class="item"><span>4) Pintar un mural</span><select data-col="4"></select></div>
+        <div class="item"><span>5) Tocar tu instrumento musical preferido</span><select data-col="5"></select></div>
+        <div class="item"><span>6) Ordenar un archivo</span><select data-col="6"></select></div>
+        <div class="item"><span>7) Hacer experimentos con plantas</span><select data-col="7"></select></div>
+        <div class="item"><span>8) Calcular el presupuesto de una familia</span><select data-col="8"></select></div>
+        <div class="item"><span>9) Construir maquetas</span><select data-col="9"></select></div>
+        <div class="item"><span>10) Llevar mensajes por la ciudad</span><select data-col="10"></select></div>
+      </div>
+    </div>
+
+    <!-- Sección III -->
+    <div class="step" data-step="3">
+      <h2>III. Trabajo de servicio social: ambiente preferido</h2>
+      <div class="grid">
+        <div class="item"><span>1) Hospital</span><select data-col="1"></select></div>
+        <div class="item"><span>2) Agencia de publicidad</span><select data-col="2"></select></div>
+        <div class="item"><span>3) Editorial</span><select data-col="3"></select></div>
+        <div class="item"><span>4) Estudio de un pintor</span><select data-col="4"></select></div>
+        <div class="item"><span>5) Orquesta de tu ciudad</span><select data-col="5"></select></div>
+        <div class="item"><span>6) Biblioteca</span><select data-col="6"></select></div>
+        <div class="item"><span>7) Laboratorio</span><select data-col="7"></select></div>
+        <div class="item"><span>8) Despacho de contadores</span><select data-col="8"></select></div>
+        <div class="item"><span>9) Taller mecánico</span><select data-col="9"></select></div>
+        <div class="item"><span>10) Playa</span><select data-col="10"></select></div>
+      </div>
+    </div>
+
+    <!-- Sección IV -->
+    <div class="step" data-step="4">
+      <h2>IV. Imagina tu vida en 10 años; ¿qué prefieres?</h2>
+      <div class="grid">
+        <div class="item"><span>1) Cruz Roja Internacional (desastres)</span><select data-col="1"></select></div>
+        <div class="item"><span>2) Gerente de mercadotecnia</span><select data-col="2"></select></div>
+        <div class="item"><span>3) Articulista en periódico/medio electrónico</span><select data-col="3"></select></div>
+        <div class="item"><span>4) Diseñador de portadas/páginas web</span><select data-col="4"></select></div>
+        <div class="item"><span>5) Intérprete musical</span><select data-col="5"></select></div>
+        <div class="item"><span>6) Diseñador de software</span><select data-col="6"></select></div>
+        <div class="item"><span>7) Coordinador de grupo científico</span><select data-col="7"></select></div>
+        <div class="item"><span>8) Contador general</span><select data-col="8"></select></div>
+        <div class="item"><span>9) Autoridad en construcción</span><select data-col="9"></select></div>
+        <div class="item"><span>10) Ampliación de la red carretera</span><select data-col="10"></select></div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button id="prev" class="btn" disabled>Anterior</button>
+      <button id="next" class="btn primary">Siguiente</button>
+      <button id="calc" class="btn accent" style="display:none">Calcular resultados</button>
+    </div>
+
+    <hr class="sep">
+
+    <div id="resultados" class="results" hidden>
+      <h3>Resultados por columna de interés</h3>
+      <div id="totales" class="totales"></div>
+      <h4>Tus 3 intereses principales</h4>
+      <ol id="top3" class="top3"></ol>
+      <details class="interpre">
+        <summary>Ver interpretación</summary>
+        <ul>
+          <li><b>1 Asistencial</b>: Ayuda, bienestar y salud de personas/grupos.</li>
+          <li><b>2 Ejecutivo‑persuasivo</b>: Liderazgo, dirección, influir en otros.</li>
+          <li><b>3 Verbal</b>: Comunicación oral/escrita, lectura/escritura.</li>
+          <li><b>4 Artístico‑plástico</b>: Transformación de materiales, diseño visual.</li>
+          <li><b>5 Artístico‑musical</b>: Interpretar/dirigir música.</li>
+          <li><b>6 Organización</b>: Ordenar, clasificar, administrar información.</li>
+          <li><b>7 Científico</b>: Explicación de fenómenos naturales, investigación.</li>
+          <li><b>8 Cálculo</b>: Operaciones numéricas, finanzas, problemas matemáticos.</li>
+          <li><b>9 Mecánico‑constructivo</b>: Construir, reparar, cómo funcionan cosas.</li>
+          <li><b>10 Aire libre</b>: Actividades al exterior, campo, obras, logística.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">Tus datos se guardan localmente en este navegador.</div>
+</footer>
+
+<script src="intereses.js"></script>
+</body>
+</html>
